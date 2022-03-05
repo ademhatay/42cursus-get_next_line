@@ -14,6 +14,11 @@ gcc main.c get_next_line.c get_next_line_utils.c
 ```
 * you can change `main.c` or `other.txt`
 
+```
+./a.out
+```
+
+
 ### bonus
 
 ## Status
