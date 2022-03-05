@@ -6,7 +6,7 @@
 /*   By: ahatay <ahatay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 22:02:59 by ahatay            #+#    #+#             */
-/*   Updated: 2022/03/04 03:07:39 by ahatay           ###   ########.fr       */
+/*   Updated: 2022/03/05 15:58:40 by ahatay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,29 +17,29 @@ size_t	ft_strlen(char *s)
 	size_t	len;
 
 	len = 0;
-    if (!s)
-        return (0);
+	if (!s)
+		return (0);
 	while (s[len] != '\0')
 		len++;
 	return (len);
 }
 
-char    *ft_strchr(char *s, int c)
+char	*ft_strchr(char *s, int c)
 {
-    int    i;
+	int	i;
 
-    i = 0;
-    if (!s)
-        return (0);
-    if (c == '\0')
-        return ((char *)&s[ft_strlen(s)]);
-    while (s[i] != '\0')
-    {
-        if (s[i] == (char) c)
-            return ((char *)&s[i]);
-        i++;
-    }
-    return (0);
+	i = 0;
+	if (!s)
+		return (0);
+	if (c == '\0')
+		return ((char *)&s[ft_strlen(s)]);
+	while (s[i] != '\0')
+	{
+		if (s[i] == (char) c)
+			return ((char *)&s[i]);
+		i++;
+	}
+	return (0);
 }
 
 char	*ft_strjoin(char *left_str, char *buff)
@@ -69,5 +69,3 @@ char	*ft_strjoin(char *left_str, char *buff)
 	free(left_str);
 	return (str);
 }
-
-
