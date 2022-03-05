@@ -6,7 +6,7 @@
 /*   By: ahatay <ahatay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 17:27:46 by ahatay            #+#    #+#             */
-/*   Updated: 2022/03/05 17:27:47 by ahatay           ###   ########.fr       */
+/*   Updated: 2022/03/05 18:04:04 by ahatay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5
-# endif
 
 size_t ft_strlen(char *str);
 char    *ft_strchr(char *s, int c);
