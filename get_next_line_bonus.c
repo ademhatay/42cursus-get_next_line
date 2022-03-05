@@ -6,7 +6,7 @@
 /*   By: ahatay <ahatay@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 17:03:03 by ahatay            #+#    #+#             */
-/*   Updated: 2022/03/05 17:32:27 by ahatay           ###   ########.fr       */
+/*   Updated: 2022/03/05 18:08:50 by ahatay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,18 +90,17 @@ char	*ft_read_save(int fd, char *save)
 	return (save);
 }
 
-
 char	*get_next_line(int fd)
 {
-	char    *line;
-    static char    *save[300];
+	char		*line;
+	static char	*save[300];
 
-    if (fd < 0 || BUFFER_SIZE <= 0 || fd > 299)
-        return (0);
-    save[fd] = ft_read_save(fd, save[fd]);
-    if (!save[fd])
-        return (NULL);
-    line = ft_get_line(save[fd]);
-    save[fd] = ft_save(save[fd]);
-    return(line);
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 299)
+		return (0);
+	save[fd] = ft_read_save(fd, save[fd]);
+	if (!save[fd])
+		return (NULL);
+	line = ft_get_line(save[fd]);
+	save[fd] = ft_save(save[fd]);
+	return (line);
 }
