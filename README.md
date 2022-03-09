@@ -22,4 +22,4 @@ gcc main.c get_next_line.c get_next_line_utils.c
 ### bonus
 
 ## Status
-ready for defence
+112 / 125 bonus KO
